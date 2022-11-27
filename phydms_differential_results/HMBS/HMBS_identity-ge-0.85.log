@@ -1,0 +1,75 @@
+2022-10-06 14:10:35,382 - INFO - Beginning execution of phydms_comprehensive in directory /home/jupyter/dms/hmbs_phydms_final
+
+2022-10-06 14:10:35,382 - INFO - Progress is being logged to phydms_differential_results/HMBS/HMBS_identity-ge-0.85.log
+
+2022-10-06 14:10:35,382 - INFO - Version information:
+	Time and date: Thu Oct  6 14:10:34 2022
+	Platform: Linux-4.19.0-22-cloud-amd64-x86_64-with-debian-10.13
+	Python version: 3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:53)  [GCC 9.4.0]
+	phydms version: 2.4.1
+	Bio version: 1.79
+	cython version: 0.29.32
+	numpy version: 1.21.6
+	scipy version: 1.7.3
+	matplotlib version: 3.5.3
+	natsort version: 8.2.0
+	sympy version: 1.10.1
+	six version: 1.16.0
+	pandas version: 1.3.5
+	pyvolve version: 1.1.0
+	statsmodels version: 0.13.2
+	weblogolib version: 3.5.0
+	PyPDF2 version: 2.11.0
+
+2022-10-06 14:10:35,382 - INFO - Parsed the following command-line arguments:
+	outprefix = phydms_differential_results/HMBS/HMBS_identity-ge-0.85_
+	alignment = ./alignments/HMBS_alignment_protidentity_ge_0.85.fasta
+	prefsfiles = ['./prefs/HMBS_penalize-scores-gt1_new_prefs.csv']
+	raxml = /home/jupyter/install/standard-RAxML-master/raxmlHPC
+	tree = None
+	ncpus = -1
+	brlen = optimize
+	omegabysite = False
+	diffprefsbysite = True
+	gammaomega = False
+	gammabeta = False
+	noavgprefs = True
+	randprefs = False
+
+2022-10-06 14:10:35,382 - INFO - Checking that the alignment ./alignments/HMBS_alignment_protidentity_ge_0.85.fasta is valid...
+2022-10-06 14:10:35,754 - INFO - Valid alignment specifying 60 sequences of length 1026.
+
+2022-10-06 14:10:35,754 - INFO - Tree not specified.
+2022-10-06 14:10:35,754 - INFO - Inferring tree with RAxML using command /home/jupyter/install/standard-RAxML-master/raxmlHPC
+2022-10-06 14:10:55,030 - INFO - RAxML inferred tree is now named phydms_differential_results/HMBS/HMBS_identity-ge-0.85_RAxML_tree.newick
+2022-10-06 14:10:55,031 - INFO - Removed the following existing files that have names that match the names of output files that will be created: phydms_differential_results/HMBS/HMBS_identity-ge-0.85_modelcomparison.md, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M0_log.log, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M0_tree.newick, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M0_loglikelihood.txt, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M0_modelparams.txt, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M5_log.log, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M5_tree.newick, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M5_loglikelihood.txt, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M5_modelparams.txt, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_ExpCM_HMBS_penalize-scores-gt1_new_prefs_log.log, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_ExpCM_HMBS_penalize-scores-gt1_new_prefs_tree.newick, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_ExpCM_HMBS_penalize-scores-gt1_new_prefs_loglikelihood.txt, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_ExpCM_HMBS_penalize-scores-gt1_new_prefs_modelparams.txt, phydms_differential_results/HMBS/HMBS_identity-ge-0.85_ExpCM_HMBS_penalize-scores-gt1_new_prefs_diffprefsbysite.txt
+
+2022-10-06 14:10:55,031 - INFO - Starting analysis to optimize tree in phydms_differential_results/HMBS/HMBS_identity-ge-0.85_RAxML_tree.newick using model YNGKP_M0. The command is: phydms ./alignments/HMBS_alignment_protidentity_ge_0.85.fasta phydms_differential_results/HMBS/HMBS_identity-ge-0.85_RAxML_tree.newick YNGKP_M0 phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M0 --brlen optimize --ncpus 1
+
+2022-10-06 14:10:55,031 - INFO - Starting analysis to optimize tree in phydms_differential_results/HMBS/HMBS_identity-ge-0.85_RAxML_tree.newick using model YNGKP_M5. The command is: phydms ./alignments/HMBS_alignment_protidentity_ge_0.85.fasta phydms_differential_results/HMBS/HMBS_identity-ge-0.85_RAxML_tree.newick YNGKP_M5 phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M5 --brlen optimize --ncpus 1
+
+2022-10-06 14:10:55,031 - INFO - Starting analysis to optimize tree in phydms_differential_results/HMBS/HMBS_identity-ge-0.85_RAxML_tree.newick using model ExpCM_HMBS_penalize-scores-gt1_new_prefs. The command is: phydms ./alignments/HMBS_alignment_protidentity_ge_0.85.fasta phydms_differential_results/HMBS/HMBS_identity-ge-0.85_RAxML_tree.newick ExpCM_./prefs/HMBS_penalize-scores-gt1_new_prefs.csv phydms_differential_results/HMBS/HMBS_identity-ge-0.85_ExpCM_HMBS_penalize-scores-gt1_new_prefs --brlen optimize --diffprefsbysite --ncpus 6
+
+2022-10-06 14:12:58,185 - INFO - Analysis completed for YNGKP_M0
+2022-10-06 14:12:58,186 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M0_log.log
+2022-10-06 14:12:58,187 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M0_tree.newick
+2022-10-06 14:12:58,187 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M0_loglikelihood.txt
+2022-10-06 14:12:58,187 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M0_modelparams.txt
+2022-10-06 14:12:58,187 - INFO - Analysis successful for YNGKP_M0
+
+2022-10-06 14:18:16,556 - INFO - Analysis completed for YNGKP_M5
+2022-10-06 14:18:16,556 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M5_log.log
+2022-10-06 14:18:16,557 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M5_tree.newick
+2022-10-06 14:18:16,557 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M5_loglikelihood.txt
+2022-10-06 14:18:16,557 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_YNGKP_M5_modelparams.txt
+2022-10-06 14:18:16,557 - INFO - Analysis successful for YNGKP_M5
+
+2022-10-06 14:32:31,434 - INFO - Analysis completed for ExpCM_HMBS_penalize-scores-gt1_new_prefs
+2022-10-06 14:32:31,434 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_ExpCM_HMBS_penalize-scores-gt1_new_prefs_log.log
+2022-10-06 14:32:31,434 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_ExpCM_HMBS_penalize-scores-gt1_new_prefs_tree.newick
+2022-10-06 14:32:31,434 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_ExpCM_HMBS_penalize-scores-gt1_new_prefs_loglikelihood.txt
+2022-10-06 14:32:31,434 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_ExpCM_HMBS_penalize-scores-gt1_new_prefs_modelparams.txt
+2022-10-06 14:32:31,434 - INFO - Found expected output file phydms_differential_results/HMBS/HMBS_identity-ge-0.85_ExpCM_HMBS_penalize-scores-gt1_new_prefs_diffprefsbysite.txt
+2022-10-06 14:32:31,434 - INFO - Analysis successful for ExpCM_HMBS_penalize-scores-gt1_new_prefs
+
+2022-10-06 14:32:32,436 - INFO - Successful completion of phydms_comprehensive

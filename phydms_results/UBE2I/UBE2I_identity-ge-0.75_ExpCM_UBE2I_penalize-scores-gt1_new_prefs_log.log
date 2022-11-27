@@ -1,0 +1,88 @@
+2022-10-06 01:00:58,791 - INFO - Beginning execution of phydms in directory /home/jupyter/dms/hmbs_phydms_final
+
+2022-10-06 01:00:58,792 - INFO - Progress is being logged to ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_log.log
+
+2022-10-06 01:00:58,792 - INFO - Version information:
+	Time and date: Thu Oct  6 01:00:58 2022
+	Platform: Linux-4.19.0-22-cloud-amd64-x86_64-with-debian-10.13
+	Python version: 3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:53)  [GCC 9.4.0]
+	phydms version: 2.4.1
+	Bio version: 1.79
+	cython version: 0.29.32
+	numpy version: 1.21.6
+	scipy version: 1.7.3
+	matplotlib version: 3.5.3
+	natsort version: 8.2.0
+	sympy version: 1.10.1
+	six version: 1.16.0
+	pandas version: 1.3.5
+	pyvolve version: 1.1.0
+	statsmodels version: 0.13.2
+	weblogolib version: 3.5.0
+	PyPDF2 version: 2.11.0
+
+2022-10-06 01:00:58,792 - INFO - Parsed the following arguments:
+	alignment = ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta
+	tree = ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick
+	model = ('ExpCM', './prefs/UBE2I_penalize-scores-gt1_new_prefs.csv')
+	outprefix = ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs
+	brlen = optimize
+	gammaomega = False
+	gammabeta = False
+	omegabysite = False
+	omegabysite_fixsyn = False
+	diffprefsbysite = False
+	diffprefsprior = ('invquadratic', 150.0, 0.5)
+	fitphi = False
+	randprefs = False
+	avgprefs = False
+	divpressure = None
+	ncpus = 1
+	fitprefsmethod = 2
+	ncats = 4
+	minbrlen = 1e-06
+	minpref = 0.002
+	seed = 1
+	initparams = None
+	profile = False
+	opt_details = False
+	nograd = False
+
+2022-10-06 01:00:58,792 - INFO - Random number seed: 1
+
+2022-10-06 01:00:58,792 - INFO - Reading alignment from ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta
+2022-10-06 01:00:59,050 - INFO - Read 56 aligned sequences from ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta, each consisting of 157 codons.
+
+2022-10-06 01:00:59,050 - INFO - The model will be an ExpCM informed by site-specific amino-acid preferences in ./prefs/UBE2I_penalize-scores-gt1_new_prefs.csv
+2022-10-06 01:00:59,242 - INFO - Successfully read site-specific amino-acid preferences for all 157 sites.
+
+2022-10-06 01:00:59,242 - INFO - Nucleotide frequency parameters phi will be set so stationary state matches alignment nucleotide frequencies of A = 0.297, C = 0.252, G = 0.239, T = 0.212
+
+2022-10-06 01:01:00,315 - INFO - Reading tree from ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick
+2022-10-06 01:01:00,318 - INFO - Tree has 56 tips.
+2022-10-06 01:01:00,371 - INFO - Adjusted 1 branch lengths up to minbrlen 1e-06
+
+2022-10-06 01:01:00,386 - INFO - Initializing TreeLikelihood..
+2022-10-06 01:01:00,465 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 01:01:14,821 - INFO - TreeLikelihood initialized.
+2022-10-06 01:01:14,821 - INFO - Maximizing log likelihood (initially -10170.82).
+2022-10-06 01:01:14,822 - INFO - Branch lengths will be optimized individually.
+2022-10-06 01:12:01,144 - INFO - Maximization complete:
+	Step 1: optimized parameters, loglik went from -10170.82 to -9133.57 (16 iterations, 23 function evals)
+	Step 2: optimized branches, loglik went from -9133.57 to -9128.66 (43 iterations, 49 function evals)
+	Step 3: optimized parameters, loglik went from -9128.66 to -9128.66 (1 iterations, 4 function evals)
+2022-10-06 01:12:01,145 - INFO - Optimized log likelihood is -9128.66.
+2022-10-06 01:12:01,145 - INFO - Writing log likelihood to ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_loglikelihood.txt
+2022-10-06 01:12:01,145 - INFO - Model parameters after optimization:
+	beta = 0.566935
+	kappa = 1.98748
+	omega = 0.135523
+	phiA = 0.317596
+	phiC = 0.238303
+	phiG = 0.237719
+2022-10-06 01:12:01,146 - INFO - Writing model parameters to ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_modelparams.txt
+2022-10-06 01:12:01,146 - INFO - Writing the optimized tree to ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_tree.newick
+
+2022-10-06 01:12:01,149 - INFO - Successful completion of phydms

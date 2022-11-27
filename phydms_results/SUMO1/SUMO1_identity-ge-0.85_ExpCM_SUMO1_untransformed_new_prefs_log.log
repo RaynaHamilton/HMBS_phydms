@@ -1,0 +1,88 @@
+2022-10-06 00:17:49,476 - INFO - Beginning execution of phydms in directory /home/jupyter/dms/hmbs_phydms_final
+
+2022-10-06 00:17:49,476 - INFO - Progress is being logged to ./phydms_results//SUMO1/SUMO1_identity-ge-0.85_ExpCM_SUMO1_untransformed_new_prefs_log.log
+
+2022-10-06 00:17:49,502 - INFO - Version information:
+	Time and date: Thu Oct  6 00:17:45 2022
+	Platform: Linux-4.19.0-22-cloud-amd64-x86_64-with-debian-10.13
+	Python version: 3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:53)  [GCC 9.4.0]
+	phydms version: 2.4.1
+	Bio version: 1.79
+	cython version: 0.29.32
+	numpy version: 1.21.6
+	scipy version: 1.7.3
+	matplotlib version: 3.5.3
+	natsort version: 8.2.0
+	sympy version: 1.10.1
+	six version: 1.16.0
+	pandas version: 1.3.5
+	pyvolve version: 1.1.0
+	statsmodels version: 0.13.2
+	weblogolib version: 3.5.0
+	PyPDF2 version: 2.11.0
+
+2022-10-06 00:17:49,502 - INFO - Parsed the following arguments:
+	alignment = ./alignments/SUMO1_alignment_protidentity_ge_0.85.fasta
+	tree = ./phydms_results//SUMO1/SUMO1_identity-ge-0.85_RAxML_tree.newick
+	model = ('ExpCM', './prefs/SUMO1_untransformed_new_prefs.csv')
+	outprefix = ./phydms_results//SUMO1/SUMO1_identity-ge-0.85_ExpCM_SUMO1_untransformed_new_prefs
+	brlen = optimize
+	gammaomega = False
+	gammabeta = False
+	omegabysite = False
+	omegabysite_fixsyn = False
+	diffprefsbysite = False
+	diffprefsprior = ('invquadratic', 150.0, 0.5)
+	fitphi = False
+	randprefs = False
+	avgprefs = False
+	divpressure = None
+	ncpus = 1
+	fitprefsmethod = 2
+	ncats = 4
+	minbrlen = 1e-06
+	minpref = 0.002
+	seed = 1
+	initparams = None
+	profile = False
+	opt_details = False
+	nograd = False
+
+2022-10-06 00:17:49,502 - INFO - Random number seed: 1
+
+2022-10-06 00:17:49,502 - INFO - Reading alignment from ./alignments/SUMO1_alignment_protidentity_ge_0.85.fasta
+2022-10-06 00:17:49,920 - INFO - Read 38 aligned sequences from ./alignments/SUMO1_alignment_protidentity_ge_0.85.fasta, each consisting of 96 codons.
+
+2022-10-06 00:17:49,930 - INFO - The model will be an ExpCM informed by site-specific amino-acid preferences in ./prefs/SUMO1_untransformed_new_prefs.csv
+2022-10-06 00:17:50,538 - INFO - Successfully read site-specific amino-acid preferences for all 96 sites.
+
+2022-10-06 00:17:50,550 - INFO - Nucleotide frequency parameters phi will be set so stationary state matches alignment nucleotide frequencies of A = 0.361, C = 0.181, G = 0.267, T = 0.192
+
+2022-10-06 00:17:56,499 - INFO - Reading tree from ./phydms_results//SUMO1/SUMO1_identity-ge-0.85_RAxML_tree.newick
+2022-10-06 00:17:56,516 - INFO - Tree has 38 tips.
+2022-10-06 00:17:56,537 - INFO - Adjusted 1 branch lengths up to minbrlen 1e-06
+
+2022-10-06 00:17:56,542 - INFO - Initializing TreeLikelihood..
+2022-10-06 00:17:56,656 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 00:18:05,652 - INFO - TreeLikelihood initialized.
+2022-10-06 00:18:05,653 - INFO - Maximizing log likelihood (initially -3601.39).
+2022-10-06 00:18:05,653 - INFO - Branch lengths will be optimized individually.
+2022-10-06 00:30:09,056 - INFO - Maximization complete:
+	Step 1: optimized parameters, loglik went from -3601.39 to -3176.18 (18 iterations, 31 function evals)
+	Step 2: optimized branches, loglik went from -3176.18 to -3172.97 (30 iterations, 36 function evals)
+	Step 3: optimized parameters, loglik went from -3172.97 to -3172.97 (5 iterations, 10 function evals)
+2022-10-06 00:30:09,070 - INFO - Optimized log likelihood is -3172.97.
+2022-10-06 00:30:09,070 - INFO - Writing log likelihood to ./phydms_results//SUMO1/SUMO1_identity-ge-0.85_ExpCM_SUMO1_untransformed_new_prefs_loglikelihood.txt
+2022-10-06 00:30:09,070 - INFO - Model parameters after optimization:
+	beta = 0.715112
+	kappa = 2.02564
+	omega = 0.0675409
+	phiA = 0.374846
+	phiC = 0.172735
+	phiG = 0.268503
+2022-10-06 00:30:09,071 - INFO - Writing model parameters to ./phydms_results//SUMO1/SUMO1_identity-ge-0.85_ExpCM_SUMO1_untransformed_new_prefs_modelparams.txt
+2022-10-06 00:30:09,071 - INFO - Writing the optimized tree to ./phydms_results//SUMO1/SUMO1_identity-ge-0.85_ExpCM_SUMO1_untransformed_new_prefs_tree.newick
+
+2022-10-06 00:30:09,073 - INFO - Successful completion of phydms

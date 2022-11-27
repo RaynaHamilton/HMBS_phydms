@@ -1,0 +1,564 @@
+2022-10-06 14:38:21,561 - INFO - Beginning execution of phydms in directory /home/jupyter/dms/hmbs_phydms_final
+
+2022-10-06 14:38:21,561 - INFO - Progress is being logged to phydms_differential_results/UBE2I/UBE2I_identity-ge-0.85_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_log.log
+
+2022-10-06 14:38:21,561 - INFO - Version information:
+	Time and date: Thu Oct  6 14:38:20 2022
+	Platform: Linux-4.19.0-22-cloud-amd64-x86_64-with-debian-10.13
+	Python version: 3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:53)  [GCC 9.4.0]
+	phydms version: 2.4.1
+	Bio version: 1.79
+	cython version: 0.29.32
+	numpy version: 1.21.6
+	scipy version: 1.7.3
+	matplotlib version: 3.5.3
+	natsort version: 8.2.0
+	sympy version: 1.10.1
+	six version: 1.16.0
+	pandas version: 1.3.5
+	pyvolve version: 1.1.0
+	statsmodels version: 0.13.2
+	weblogolib version: 3.5.0
+	PyPDF2 version: 2.11.0
+
+2022-10-06 14:38:21,562 - INFO - Parsed the following arguments:
+	alignment = ./alignments/UBE2I_alignment_protidentity_ge_0.85.fasta
+	tree = phydms_differential_results/UBE2I/UBE2I_identity-ge-0.85_RAxML_tree.newick
+	model = ('ExpCM', './prefs/UBE2I_penalize-scores-gt1_new_prefs.csv')
+	outprefix = phydms_differential_results/UBE2I/UBE2I_identity-ge-0.85_ExpCM_UBE2I_penalize-scores-gt1_new_prefs
+	brlen = optimize
+	gammaomega = False
+	gammabeta = False
+	omegabysite = False
+	omegabysite_fixsyn = False
+	diffprefsbysite = True
+	diffprefsprior = ('invquadratic', 150.0, 0.5)
+	fitphi = False
+	randprefs = False
+	avgprefs = False
+	divpressure = None
+	ncpus = 6
+	fitprefsmethod = 2
+	ncats = 4
+	minbrlen = 1e-06
+	minpref = 0.002
+	seed = 1
+	initparams = None
+	profile = False
+	opt_details = False
+	nograd = False
+
+2022-10-06 14:38:21,562 - INFO - Random number seed: 1
+
+2022-10-06 14:38:21,562 - INFO - Reading alignment from ./alignments/UBE2I_alignment_protidentity_ge_0.85.fasta
+2022-10-06 14:38:21,687 - INFO - Read 46 aligned sequences from ./alignments/UBE2I_alignment_protidentity_ge_0.85.fasta, each consisting of 157 codons.
+
+2022-10-06 14:38:21,687 - INFO - The model will be an ExpCM informed by site-specific amino-acid preferences in ./prefs/UBE2I_penalize-scores-gt1_new_prefs.csv
+2022-10-06 14:38:21,891 - INFO - Successfully read site-specific amino-acid preferences for all 157 sites.
+
+2022-10-06 14:38:21,891 - INFO - Nucleotide frequency parameters phi will be set so stationary state matches alignment nucleotide frequencies of A = 0.295, C = 0.253, G = 0.240, T = 0.212
+
+2022-10-06 14:38:22,414 - INFO - Reading tree from phydms_differential_results/UBE2I/UBE2I_identity-ge-0.85_RAxML_tree.newick
+2022-10-06 14:38:22,417 - INFO - Tree has 46 tips.
+2022-10-06 14:38:22,432 - INFO - Adjusted 1 branch lengths up to minbrlen 1e-06
+
+2022-10-06 14:38:22,432 - INFO - Initializing TreeLikelihood..
+2022-10-06 14:38:22,473 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:38:27,275 - INFO - TreeLikelihood initialized.
+2022-10-06 14:38:27,276 - INFO - Maximizing log likelihood (initially -7960.52).
+2022-10-06 14:38:27,276 - INFO - Branch lengths will be optimized individually.
+2022-10-06 14:41:40,455 - INFO - Maximization complete:
+	Step 1: optimized parameters, loglik went from -7960.52 to -7090.44 (15 iterations, 24 function evals)
+	Step 2: optimized branches, loglik went from -7090.44 to -7086.58 (29 iterations, 34 function evals)
+	Step 3: optimized parameters, loglik went from -7086.58 to -7086.57 (2 iterations, 5 function evals)
+2022-10-06 14:41:40,456 - INFO - Optimized log likelihood is -7086.57.
+2022-10-06 14:41:40,456 - INFO - Writing log likelihood to phydms_differential_results/UBE2I/UBE2I_identity-ge-0.85_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_loglikelihood.txt
+2022-10-06 14:41:40,456 - INFO - Model parameters after optimization:
+	beta = 0.6426
+	kappa = 1.89536
+	omega = 0.126252
+	phiA = 0.31632
+	phiC = 0.239061
+	phiG = 0.238996
+2022-10-06 14:41:40,456 - INFO - Writing model parameters to phydms_differential_results/UBE2I/UBE2I_identity-ge-0.85_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_modelparams.txt
+2022-10-06 14:41:40,456 - INFO - Writing the optimized tree to phydms_differential_results/UBE2I/UBE2I_identity-ge-0.85_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_tree.newick
+
+2022-10-06 14:41:40,458 - INFO - 
+Fitting differential preferences for each site to detect differential selection.
+2022-10-06 14:41:40,458 - INFO - For the fitting, using ExpCM_fitprefs2 implementation as specified by fitprefsmethod = 2
+2022-10-06 14:41:40,458 - INFO - Fitting with 6 CPUs...
+2022-10-06 14:41:40,596 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:40,981 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:41,139 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:41,354 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:41,554 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:41,764 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:41,969 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:42,189 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:42,398 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:42,606 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:42,810 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:43,019 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:52,794 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:53,004 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:53,208 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:53,427 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:53,632 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:53,842 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:54,049 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:41:54,260 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:05,869 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:06,073 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:06,278 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:06,485 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:06,690 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:06,897 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:07,099 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:07,305 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:07,509 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:07,717 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:07,934 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:08,142 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:28,152 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:28,355 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:28,559 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:28,768 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:28,972 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:29,178 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:29,381 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:29,590 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:29,803 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:30,018 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:30,224 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:30,433 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:40,864 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:41,072 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:41,276 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:41,520 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:41,721 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:41,929 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:42,134 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:42,343 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:42,561 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:42,786 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:42,994 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:43,204 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:51,199 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:51,405 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:51,609 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:51,809 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:52,014 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:52,221 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:52,426 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:52,632 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:52,847 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:53,053 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:53,264 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:42:53,475 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:02,874 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:03,080 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:03,283 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:03,494 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:03,698 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:03,912 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:04,119 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:04,324 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:04,531 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:04,738 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:04,952 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:05,167 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:35,050 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:35,257 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:35,460 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:35,670 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:35,876 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:36,089 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:43,546 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:43,750 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:43,954 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:44,164 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:44,363 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:44,571 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:44,776 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:44,980 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:45,187 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:45,395 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:45,600 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:45,811 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:57,411 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:57,618 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:57,823 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:58,034 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:58,235 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:58,442 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:58,642 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:43:58,853 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:39,915 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:40,124 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:40,329 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:40,533 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:49,449 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:49,654 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:49,856 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:50,067 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:50,269 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:50,477 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:50,683 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:50,894 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:51,099 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:51,302 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:51,506 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:45:51,707 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:19,334 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:19,538 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:19,739 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:19,946 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:20,152 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:20,365 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:20,569 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:20,776 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:20,983 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:21,189 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:21,383 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:21,591 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:46:41,759 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:446: UserWarning: Optimizer reports convergence, but max element in Jacobian is 5434.071180541884
+Summary of optimization:
+['Step 1: optimized parameters, loglik went from -112.97 to -104.89 (36 iterations, 62 function evals)']
+  .format(jacmax, summary))
+
+2022-10-06 14:46:44,800 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:446: UserWarning: Optimizer reports convergence, but max element in Jacobian is 3170.995053608407
+Summary of optimization:
+['Step 1: optimized parameters, loglik went from -149.56 to -143.15 (31 iterations, 75 function evals)']
+  .format(jacmax, summary))
+
+2022-10-06 14:47:03,923 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:04,127 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:04,330 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:04,535 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:04,736 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:04,943 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:05,160 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:05,375 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:05,580 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:05,786 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:05,987 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:06,204 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:53,257 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:446: UserWarning: Optimizer reports convergence, but max element in Jacobian is 13725.540354188315
+Summary of optimization:
+['Step 1: optimized parameters, loglik went from -197.57 to -182.12 (59 iterations, 113 function evals)']
+  .format(jacmax, summary))
+
+2022-10-06 14:47:58,741 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:446: UserWarning: Optimizer reports convergence, but max element in Jacobian is 32747.196385947092
+Summary of optimization:
+['Step 1: optimized parameters, loglik went from -179.25 to -168.73 (51 iterations, 145 function evals)']
+  .format(jacmax, summary))
+
+2022-10-06 14:47:58,951 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:47:59,156 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:48:20,570 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:446: UserWarning: Optimizer reports convergence, but max element in Jacobian is 115190.27175485087
+Summary of optimization:
+['Step 1: optimized parameters, loglik went from -198.80 to -183.20 (43 iterations, 117 function evals)']
+  .format(jacmax, summary))
+
+2022-10-06 14:48:20,655 - INFO - Completed fitting site-specific differential preferences.
+2022-10-06 14:48:20,655 - INFO - Writing results to phydms_differential_results/UBE2I/UBE2I_identity-ge-0.85_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_diffprefsbysite.txt
+
+2022-10-06 14:48:20,655 - INFO - Successful completion of phydms

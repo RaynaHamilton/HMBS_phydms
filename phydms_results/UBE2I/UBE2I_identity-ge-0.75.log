@@ -1,0 +1,146 @@
+2022-10-06 01:00:38,380 - INFO - Beginning execution of phydms_comprehensive in directory /home/jupyter/dms/hmbs_phydms_final
+
+2022-10-06 01:00:38,381 - INFO - Progress is being logged to ./phydms_results//UBE2I/UBE2I_identity-ge-0.75.log
+
+2022-10-06 01:00:38,381 - INFO - Version information:
+	Time and date: Thu Oct  6 01:00:37 2022
+	Platform: Linux-4.19.0-22-cloud-amd64-x86_64-with-debian-10.13
+	Python version: 3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:53)  [GCC 9.4.0]
+	phydms version: 2.4.1
+	Bio version: 1.79
+	cython version: 0.29.32
+	numpy version: 1.21.6
+	scipy version: 1.7.3
+	matplotlib version: 3.5.3
+	natsort version: 8.2.0
+	sympy version: 1.10.1
+	six version: 1.16.0
+	pandas version: 1.3.5
+	pyvolve version: 1.1.0
+	statsmodels version: 0.13.2
+	weblogolib version: 3.5.0
+	PyPDF2 version: 2.11.0
+
+2022-10-06 01:00:38,381 - INFO - Parsed the following command-line arguments:
+	outprefix = ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_
+	alignment = ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta
+	prefsfiles = ['./prefs/UBE2I_penalize-scores-gt1_new_prefs.csv', './prefs/UBE2I_untransformed_new_prefs.csv', './prefs/UBE2I_max-scores-at-1_new_prefs.csv']
+	raxml = /home/jupyter/install/standard-RAxML-master/raxmlHPC
+	tree = None
+	ncpus = -1
+	brlen = optimize
+	omegabysite = False
+	diffprefsbysite = False
+	gammaomega = False
+	gammabeta = False
+	noavgprefs = False
+	randprefs = True
+
+2022-10-06 01:00:38,381 - INFO - Checking that the alignment ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta is valid...
+2022-10-06 01:00:38,571 - INFO - Valid alignment specifying 56 sequences of length 471.
+
+2022-10-06 01:00:38,571 - INFO - Tree not specified.
+2022-10-06 01:00:38,571 - INFO - Inferring tree with RAxML using command /home/jupyter/install/standard-RAxML-master/raxmlHPC
+2022-10-06 01:00:55,092 - INFO - RAxML inferred tree is now named ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick
+2022-10-06 01:00:55,094 - INFO - Removed the following existing files that have names that match the names of output files that will be created: ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_modelcomparison.md, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_log.log, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_tree.newick, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_loglikelihood.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_modelparams.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M5_log.log, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M5_tree.newick, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M5_loglikelihood.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M5_modelparams.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_log.log, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_tree.newick, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_loglikelihood.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_modelparams.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_log.log, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_tree.newick, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_loglikelihood.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_modelparams.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_log.log, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_tree.newick, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_loglikelihood.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_modelparams.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_untransformed_new_prefs_log.log, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_untransformed_new_prefs_tree.newick, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_untransformed_new_prefs_loglikelihood.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_untransformed_new_prefs_modelparams.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_untransformed_new_prefs_log.log, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_untransformed_new_prefs_tree.newick, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_untransformed_new_prefs_loglikelihood.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_untransformed_new_prefs_modelparams.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_untransformed_new_prefs_log.log, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_untransformed_new_prefs_tree.newick, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_untransformed_new_prefs_loglikelihood.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_untransformed_new_prefs_modelparams.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_max-scores-at-1_new_prefs_log.log, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_max-scores-at-1_new_prefs_tree.newick, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_max-scores-at-1_new_prefs_loglikelihood.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_max-scores-at-1_new_prefs_modelparams.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs_log.log, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs_tree.newick, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs_loglikelihood.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs_modelparams.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs_log.log, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs_tree.newick, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs_loglikelihood.txt, ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs_modelparams.txt
+
+2022-10-06 01:00:55,094 - INFO - Starting analysis to optimize tree in ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick using model YNGKP_M0. The command is: phydms ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick YNGKP_M0 ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0 --brlen optimize --ncpus 1
+
+2022-10-06 01:00:55,095 - INFO - Starting analysis to optimize tree in ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick using model YNGKP_M5. The command is: phydms ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick YNGKP_M5 ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M5 --brlen optimize --ncpus 1
+
+2022-10-06 01:00:55,095 - INFO - Starting analysis to optimize tree in ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick using model ExpCM_UBE2I_penalize-scores-gt1_new_prefs. The command is: phydms ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/UBE2I_penalize-scores-gt1_new_prefs.csv ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs --brlen optimize --ncpus 1
+
+2022-10-06 01:00:55,095 - INFO - Starting analysis to optimize tree in ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick using model averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs. The command is: phydms ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/UBE2I_penalize-scores-gt1_new_prefs.csv ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs --brlen optimize --avgprefs --ncpus 1
+
+2022-10-06 01:00:55,095 - INFO - Starting analysis to optimize tree in ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick using model randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs. The command is: phydms ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/UBE2I_penalize-scores-gt1_new_prefs.csv ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs --brlen optimize --randprefs --ncpus 1
+
+2022-10-06 01:00:55,095 - INFO - Starting analysis to optimize tree in ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick using model ExpCM_UBE2I_untransformed_new_prefs. The command is: phydms ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/UBE2I_untransformed_new_prefs.csv ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_untransformed_new_prefs --brlen optimize --ncpus 1
+
+2022-10-06 01:00:55,095 - INFO - Starting analysis to optimize tree in ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick using model averaged_ExpCM_UBE2I_untransformed_new_prefs. The command is: phydms ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/UBE2I_untransformed_new_prefs.csv ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_untransformed_new_prefs --brlen optimize --avgprefs --ncpus 1
+
+2022-10-06 01:00:55,095 - INFO - Starting analysis to optimize tree in ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick using model randomized_ExpCM_UBE2I_untransformed_new_prefs. The command is: phydms ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/UBE2I_untransformed_new_prefs.csv ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_untransformed_new_prefs --brlen optimize --randprefs --ncpus 1
+
+2022-10-06 01:00:55,095 - INFO - Starting analysis to optimize tree in ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick using model ExpCM_UBE2I_max-scores-at-1_new_prefs. The command is: phydms ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/UBE2I_max-scores-at-1_new_prefs.csv ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_max-scores-at-1_new_prefs --brlen optimize --ncpus 1
+
+2022-10-06 01:00:55,096 - INFO - Starting analysis to optimize tree in ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick using model averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs. The command is: phydms ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/UBE2I_max-scores-at-1_new_prefs.csv ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs --brlen optimize --avgprefs --ncpus 1
+
+2022-10-06 01:00:55,096 - INFO - Starting analysis to optimize tree in ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick using model randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs. The command is: phydms ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/UBE2I_max-scores-at-1_new_prefs.csv ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs --brlen optimize --randprefs --ncpus 1
+
+2022-10-06 01:05:10,402 - INFO - Analysis completed for YNGKP_M0
+2022-10-06 01:05:10,403 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_log.log
+2022-10-06 01:05:10,403 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_tree.newick
+2022-10-06 01:05:10,403 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_loglikelihood.txt
+2022-10-06 01:05:10,403 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_modelparams.txt
+2022-10-06 01:05:10,403 - INFO - Analysis successful for YNGKP_M0
+
+2022-10-06 01:11:22,791 - INFO - Analysis completed for ExpCM_UBE2I_untransformed_new_prefs
+2022-10-06 01:11:22,792 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_untransformed_new_prefs_log.log
+2022-10-06 01:11:22,793 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_untransformed_new_prefs_tree.newick
+2022-10-06 01:11:22,793 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_untransformed_new_prefs_loglikelihood.txt
+2022-10-06 01:11:22,793 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_untransformed_new_prefs_modelparams.txt
+2022-10-06 01:11:22,793 - INFO - Analysis successful for ExpCM_UBE2I_untransformed_new_prefs
+
+2022-10-06 01:11:47,826 - INFO - Analysis completed for randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs
+2022-10-06 01:11:47,826 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_log.log
+2022-10-06 01:11:47,826 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_tree.newick
+2022-10-06 01:11:47,827 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_loglikelihood.txt
+2022-10-06 01:11:47,827 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_modelparams.txt
+2022-10-06 01:11:47,827 - INFO - Analysis successful for randomized_ExpCM_UBE2I_penalize-scores-gt1_new_prefs
+
+2022-10-06 01:12:01,849 - INFO - Analysis completed for ExpCM_UBE2I_penalize-scores-gt1_new_prefs
+2022-10-06 01:12:01,850 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_log.log
+2022-10-06 01:12:01,850 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_tree.newick
+2022-10-06 01:12:01,851 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_loglikelihood.txt
+2022-10-06 01:12:01,851 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_modelparams.txt
+2022-10-06 01:12:01,851 - INFO - Analysis successful for ExpCM_UBE2I_penalize-scores-gt1_new_prefs
+
+2022-10-06 01:12:24,875 - INFO - Analysis completed for averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs
+2022-10-06 01:12:24,875 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_log.log
+2022-10-06 01:12:24,875 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_tree.newick
+2022-10-06 01:12:24,875 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_loglikelihood.txt
+2022-10-06 01:12:24,876 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs_modelparams.txt
+2022-10-06 01:12:24,876 - INFO - Analysis successful for averaged_ExpCM_UBE2I_penalize-scores-gt1_new_prefs
+
+2022-10-06 01:12:28,880 - INFO - Analysis completed for randomized_ExpCM_UBE2I_untransformed_new_prefs
+2022-10-06 01:12:28,880 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_untransformed_new_prefs_log.log
+2022-10-06 01:12:28,881 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_untransformed_new_prefs_tree.newick
+2022-10-06 01:12:28,881 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_untransformed_new_prefs_loglikelihood.txt
+2022-10-06 01:12:28,881 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_untransformed_new_prefs_modelparams.txt
+2022-10-06 01:12:28,881 - INFO - Analysis successful for randomized_ExpCM_UBE2I_untransformed_new_prefs
+
+2022-10-06 01:12:55,913 - INFO - Analysis completed for averaged_ExpCM_UBE2I_untransformed_new_prefs
+2022-10-06 01:12:55,913 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_untransformed_new_prefs_log.log
+2022-10-06 01:12:55,914 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_untransformed_new_prefs_tree.newick
+2022-10-06 01:12:55,914 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_untransformed_new_prefs_loglikelihood.txt
+2022-10-06 01:12:55,914 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_untransformed_new_prefs_modelparams.txt
+2022-10-06 01:12:55,914 - INFO - Analysis successful for averaged_ExpCM_UBE2I_untransformed_new_prefs
+
+2022-10-06 01:14:13,001 - INFO - Analysis completed for ExpCM_UBE2I_max-scores-at-1_new_prefs
+2022-10-06 01:14:13,002 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_max-scores-at-1_new_prefs_log.log
+2022-10-06 01:14:13,002 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_max-scores-at-1_new_prefs_tree.newick
+2022-10-06 01:14:13,002 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_max-scores-at-1_new_prefs_loglikelihood.txt
+2022-10-06 01:14:13,002 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_ExpCM_UBE2I_max-scores-at-1_new_prefs_modelparams.txt
+2022-10-06 01:14:13,002 - INFO - Analysis successful for ExpCM_UBE2I_max-scores-at-1_new_prefs
+
+2022-10-06 01:14:55,051 - INFO - Analysis completed for YNGKP_M5
+2022-10-06 01:14:55,052 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M5_log.log
+2022-10-06 01:14:55,052 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M5_tree.newick
+2022-10-06 01:14:55,052 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M5_loglikelihood.txt
+2022-10-06 01:14:55,052 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M5_modelparams.txt
+2022-10-06 01:14:55,052 - INFO - Analysis successful for YNGKP_M5
+
+2022-10-06 01:17:02,198 - INFO - Analysis completed for randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs
+2022-10-06 01:17:02,199 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs_log.log
+2022-10-06 01:17:02,199 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs_tree.newick
+2022-10-06 01:17:02,199 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs_loglikelihood.txt
+2022-10-06 01:17:02,199 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs_modelparams.txt
+2022-10-06 01:17:02,199 - INFO - Analysis successful for randomized_ExpCM_UBE2I_max-scores-at-1_new_prefs
+
+2022-10-06 01:17:10,208 - INFO - Analysis completed for averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs
+2022-10-06 01:17:10,209 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs_log.log
+2022-10-06 01:17:10,209 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs_tree.newick
+2022-10-06 01:17:10,209 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs_loglikelihood.txt
+2022-10-06 01:17:10,209 - INFO - Found expected output file ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs_modelparams.txt
+2022-10-06 01:17:10,209 - INFO - Analysis successful for averaged_ExpCM_UBE2I_max-scores-at-1_new_prefs
+
+2022-10-06 01:17:11,212 - INFO - Successful completion of phydms_comprehensive

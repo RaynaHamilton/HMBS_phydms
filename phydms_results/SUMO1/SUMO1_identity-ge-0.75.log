@@ -1,0 +1,146 @@
+2022-10-06 00:32:47,895 - INFO - Beginning execution of phydms_comprehensive in directory /home/jupyter/dms/hmbs_phydms_final
+
+2022-10-06 00:32:47,896 - INFO - Progress is being logged to ./phydms_results//SUMO1/SUMO1_identity-ge-0.75.log
+
+2022-10-06 00:32:47,896 - INFO - Version information:
+	Time and date: Thu Oct  6 00:32:47 2022
+	Platform: Linux-4.19.0-22-cloud-amd64-x86_64-with-debian-10.13
+	Python version: 3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:53)  [GCC 9.4.0]
+	phydms version: 2.4.1
+	Bio version: 1.79
+	cython version: 0.29.32
+	numpy version: 1.21.6
+	scipy version: 1.7.3
+	matplotlib version: 3.5.3
+	natsort version: 8.2.0
+	sympy version: 1.10.1
+	six version: 1.16.0
+	pandas version: 1.3.5
+	pyvolve version: 1.1.0
+	statsmodels version: 0.13.2
+	weblogolib version: 3.5.0
+	PyPDF2 version: 2.11.0
+
+2022-10-06 00:32:47,896 - INFO - Parsed the following command-line arguments:
+	outprefix = ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_
+	alignment = ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta
+	prefsfiles = ['./prefs/SUMO1_penalize-scores-gt1_new_prefs.csv', './prefs/SUMO1_untransformed_new_prefs.csv', './prefs/SUMO1_max-scores-at-1_new_prefs.csv']
+	raxml = /home/jupyter/install/standard-RAxML-master/raxmlHPC
+	tree = None
+	ncpus = -1
+	brlen = optimize
+	omegabysite = False
+	diffprefsbysite = False
+	gammaomega = False
+	gammabeta = False
+	noavgprefs = False
+	randprefs = True
+
+2022-10-06 00:32:47,896 - INFO - Checking that the alignment ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta is valid...
+2022-10-06 00:32:48,015 - INFO - Valid alignment specifying 61 sequences of length 288.
+
+2022-10-06 00:32:48,015 - INFO - Tree not specified.
+2022-10-06 00:32:48,015 - INFO - Inferring tree with RAxML using command /home/jupyter/install/standard-RAxML-master/raxmlHPC
+2022-10-06 00:33:03,553 - INFO - RAxML inferred tree is now named ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick
+2022-10-06 00:33:03,556 - INFO - Removed the following existing files that have names that match the names of output files that will be created: ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_modelcomparison.md, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M0_log.log, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M0_loglikelihood.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M0_modelparams.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M5_log.log, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M5_tree.newick, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M5_loglikelihood.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M5_modelparams.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_log.log, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_tree.newick, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_loglikelihood.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_modelparams.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_log.log, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_tree.newick, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_loglikelihood.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_modelparams.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_log.log, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_tree.newick, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_loglikelihood.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_modelparams.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_untransformed_new_prefs_log.log, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_untransformed_new_prefs_tree.newick, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_untransformed_new_prefs_loglikelihood.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_untransformed_new_prefs_modelparams.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_untransformed_new_prefs_log.log, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_untransformed_new_prefs_tree.newick, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_untransformed_new_prefs_loglikelihood.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_untransformed_new_prefs_modelparams.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_untransformed_new_prefs_log.log, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_untransformed_new_prefs_tree.newick, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_untransformed_new_prefs_loglikelihood.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_untransformed_new_prefs_modelparams.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_max-scores-at-1_new_prefs_log.log, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_max-scores-at-1_new_prefs_tree.newick, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_max-scores-at-1_new_prefs_loglikelihood.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_max-scores-at-1_new_prefs_modelparams.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs_log.log, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs_tree.newick, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs_loglikelihood.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs_modelparams.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs_log.log, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs_tree.newick, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs_loglikelihood.txt, ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs_modelparams.txt
+
+2022-10-06 00:33:03,556 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick using model YNGKP_M0. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick YNGKP_M0 ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M0 --brlen optimize --ncpus 1
+
+2022-10-06 00:33:03,556 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick using model YNGKP_M5. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick YNGKP_M5 ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M5 --brlen optimize --ncpus 1
+
+2022-10-06 00:33:03,556 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick using model ExpCM_SUMO1_penalize-scores-gt1_new_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/SUMO1_penalize-scores-gt1_new_prefs.csv ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_penalize-scores-gt1_new_prefs --brlen optimize --ncpus 1
+
+2022-10-06 00:33:03,556 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick using model averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/SUMO1_penalize-scores-gt1_new_prefs.csv ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs --brlen optimize --avgprefs --ncpus 1
+
+2022-10-06 00:33:03,557 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick using model randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/SUMO1_penalize-scores-gt1_new_prefs.csv ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs --brlen optimize --randprefs --ncpus 1
+
+2022-10-06 00:33:03,557 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick using model ExpCM_SUMO1_untransformed_new_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/SUMO1_untransformed_new_prefs.csv ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_untransformed_new_prefs --brlen optimize --ncpus 1
+
+2022-10-06 00:33:03,557 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick using model averaged_ExpCM_SUMO1_untransformed_new_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/SUMO1_untransformed_new_prefs.csv ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_untransformed_new_prefs --brlen optimize --avgprefs --ncpus 1
+
+2022-10-06 00:33:03,557 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick using model randomized_ExpCM_SUMO1_untransformed_new_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/SUMO1_untransformed_new_prefs.csv ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_untransformed_new_prefs --brlen optimize --randprefs --ncpus 1
+
+2022-10-06 00:33:03,557 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick using model ExpCM_SUMO1_max-scores-at-1_new_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/SUMO1_max-scores-at-1_new_prefs.csv ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_max-scores-at-1_new_prefs --brlen optimize --ncpus 1
+
+2022-10-06 00:33:03,557 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick using model averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/SUMO1_max-scores-at-1_new_prefs.csv ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs --brlen optimize --avgprefs --ncpus 1
+
+2022-10-06 00:33:03,557 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick using model randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_RAxML_tree.newick ExpCM_./prefs/SUMO1_max-scores-at-1_new_prefs.csv ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs --brlen optimize --randprefs --ncpus 1
+
+2022-10-06 00:36:25,842 - INFO - Analysis completed for YNGKP_M0
+2022-10-06 00:36:25,843 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M0_log.log
+2022-10-06 00:36:25,843 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick
+2022-10-06 00:36:25,843 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M0_loglikelihood.txt
+2022-10-06 00:36:25,844 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M0_modelparams.txt
+2022-10-06 00:36:25,844 - INFO - Analysis successful for YNGKP_M0
+
+2022-10-06 00:42:26,222 - INFO - Analysis completed for randomized_ExpCM_SUMO1_untransformed_new_prefs
+2022-10-06 00:42:26,223 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_untransformed_new_prefs_log.log
+2022-10-06 00:42:26,223 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_untransformed_new_prefs_tree.newick
+2022-10-06 00:42:26,223 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_untransformed_new_prefs_loglikelihood.txt
+2022-10-06 00:42:26,223 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_untransformed_new_prefs_modelparams.txt
+2022-10-06 00:42:26,223 - INFO - Analysis successful for randomized_ExpCM_SUMO1_untransformed_new_prefs
+
+2022-10-06 00:42:31,241 - INFO - Analysis completed for averaged_ExpCM_SUMO1_untransformed_new_prefs
+2022-10-06 00:42:31,242 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_untransformed_new_prefs_log.log
+2022-10-06 00:42:31,243 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_untransformed_new_prefs_tree.newick
+2022-10-06 00:42:31,243 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_untransformed_new_prefs_loglikelihood.txt
+2022-10-06 00:42:31,243 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_untransformed_new_prefs_modelparams.txt
+2022-10-06 00:42:31,243 - INFO - Analysis successful for averaged_ExpCM_SUMO1_untransformed_new_prefs
+
+2022-10-06 00:42:38,262 - INFO - Analysis completed for ExpCM_SUMO1_penalize-scores-gt1_new_prefs
+2022-10-06 00:42:38,262 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_log.log
+2022-10-06 00:42:38,263 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_tree.newick
+2022-10-06 00:42:38,263 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_loglikelihood.txt
+2022-10-06 00:42:38,263 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_modelparams.txt
+2022-10-06 00:42:38,263 - INFO - Analysis successful for ExpCM_SUMO1_penalize-scores-gt1_new_prefs
+
+2022-10-06 00:42:43,268 - INFO - Analysis completed for randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs
+2022-10-06 00:42:43,269 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_log.log
+2022-10-06 00:42:43,269 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_tree.newick
+2022-10-06 00:42:43,269 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_loglikelihood.txt
+2022-10-06 00:42:43,269 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_modelparams.txt
+2022-10-06 00:42:43,270 - INFO - Analysis successful for randomized_ExpCM_SUMO1_penalize-scores-gt1_new_prefs
+
+2022-10-06 00:42:46,276 - INFO - Analysis completed for averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs
+2022-10-06 00:42:46,277 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_log.log
+2022-10-06 00:42:46,277 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_tree.newick
+2022-10-06 00:42:46,277 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_loglikelihood.txt
+2022-10-06 00:42:46,277 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs_modelparams.txt
+2022-10-06 00:42:46,277 - INFO - Analysis successful for averaged_ExpCM_SUMO1_penalize-scores-gt1_new_prefs
+
+2022-10-06 00:42:49,281 - INFO - Analysis completed for ExpCM_SUMO1_untransformed_new_prefs
+2022-10-06 00:42:49,282 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_untransformed_new_prefs_log.log
+2022-10-06 00:42:49,282 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_untransformed_new_prefs_tree.newick
+2022-10-06 00:42:49,282 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_untransformed_new_prefs_loglikelihood.txt
+2022-10-06 00:42:49,282 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_untransformed_new_prefs_modelparams.txt
+2022-10-06 00:42:49,282 - INFO - Analysis successful for ExpCM_SUMO1_untransformed_new_prefs
+
+2022-10-06 00:43:52,358 - INFO - Analysis completed for ExpCM_SUMO1_max-scores-at-1_new_prefs
+2022-10-06 00:43:52,358 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_max-scores-at-1_new_prefs_log.log
+2022-10-06 00:43:52,359 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_max-scores-at-1_new_prefs_tree.newick
+2022-10-06 00:43:52,359 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_max-scores-at-1_new_prefs_loglikelihood.txt
+2022-10-06 00:43:52,359 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_ExpCM_SUMO1_max-scores-at-1_new_prefs_modelparams.txt
+2022-10-06 00:43:52,359 - INFO - Analysis successful for ExpCM_SUMO1_max-scores-at-1_new_prefs
+
+2022-10-06 00:43:58,366 - INFO - Analysis completed for YNGKP_M5
+2022-10-06 00:43:58,366 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M5_log.log
+2022-10-06 00:43:58,366 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M5_tree.newick
+2022-10-06 00:43:58,367 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M5_loglikelihood.txt
+2022-10-06 00:43:58,367 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_YNGKP_M5_modelparams.txt
+2022-10-06 00:43:58,367 - INFO - Analysis successful for YNGKP_M5
+
+2022-10-06 00:46:02,507 - INFO - Analysis completed for randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs
+2022-10-06 00:46:02,507 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs_log.log
+2022-10-06 00:46:02,507 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs_tree.newick
+2022-10-06 00:46:02,508 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs_loglikelihood.txt
+2022-10-06 00:46:02,508 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs_modelparams.txt
+2022-10-06 00:46:02,508 - INFO - Analysis successful for randomized_ExpCM_SUMO1_max-scores-at-1_new_prefs
+
+2022-10-06 00:46:23,532 - INFO - Analysis completed for averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs
+2022-10-06 00:46:23,532 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs_log.log
+2022-10-06 00:46:23,532 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs_tree.newick
+2022-10-06 00:46:23,532 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs_loglikelihood.txt
+2022-10-06 00:46:23,532 - INFO - Found expected output file ./phydms_results//SUMO1/SUMO1_identity-ge-0.75_averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs_modelparams.txt
+2022-10-06 00:46:23,532 - INFO - Analysis successful for averaged_ExpCM_SUMO1_max-scores-at-1_new_prefs
+
+2022-10-06 00:46:24,535 - INFO - Successful completion of phydms_comprehensive

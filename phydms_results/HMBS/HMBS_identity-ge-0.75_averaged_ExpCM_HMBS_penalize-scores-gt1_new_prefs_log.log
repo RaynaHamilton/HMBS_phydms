@@ -1,0 +1,90 @@
+2022-10-05 23:45:22,636 - INFO - Beginning execution of phydms in directory /home/jupyter/dms/hmbs_phydms_final
+
+2022-10-05 23:45:22,636 - INFO - Progress is being logged to ./phydms_results//HMBS/HMBS_identity-ge-0.75_averaged_ExpCM_HMBS_penalize-scores-gt1_new_prefs_log.log
+
+2022-10-05 23:45:22,636 - INFO - Version information:
+	Time and date: Wed Oct  5 23:45:21 2022
+	Platform: Linux-4.19.0-22-cloud-amd64-x86_64-with-debian-10.13
+	Python version: 3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:53)  [GCC 9.4.0]
+	phydms version: 2.4.1
+	Bio version: 1.79
+	cython version: 0.29.32
+	numpy version: 1.21.6
+	scipy version: 1.7.3
+	matplotlib version: 3.5.3
+	natsort version: 8.2.0
+	sympy version: 1.10.1
+	six version: 1.16.0
+	pandas version: 1.3.5
+	pyvolve version: 1.1.0
+	statsmodels version: 0.13.2
+	weblogolib version: 3.5.0
+	PyPDF2 version: 2.11.0
+
+2022-10-05 23:45:22,636 - INFO - Parsed the following arguments:
+	alignment = ./alignments/HMBS_alignment_protidentity_ge_0.75.fasta
+	tree = ./phydms_results//HMBS/HMBS_identity-ge-0.75_RAxML_tree.newick
+	model = ('ExpCM', './prefs/HMBS_penalize-scores-gt1_new_prefs.csv')
+	outprefix = ./phydms_results//HMBS/HMBS_identity-ge-0.75_averaged_ExpCM_HMBS_penalize-scores-gt1_new_prefs
+	brlen = optimize
+	gammaomega = False
+	gammabeta = False
+	omegabysite = False
+	omegabysite_fixsyn = False
+	diffprefsbysite = False
+	diffprefsprior = ('invquadratic', 150.0, 0.5)
+	fitphi = False
+	randprefs = False
+	avgprefs = True
+	divpressure = None
+	ncpus = 1
+	fitprefsmethod = 2
+	ncats = 4
+	minbrlen = 1e-06
+	minpref = 0.002
+	seed = 1
+	initparams = None
+	profile = False
+	opt_details = False
+	nograd = False
+
+2022-10-05 23:45:22,637 - INFO - Random number seed: 1
+
+2022-10-05 23:45:22,637 - INFO - Reading alignment from ./alignments/HMBS_alignment_protidentity_ge_0.75.fasta
+2022-10-05 23:45:24,518 - INFO - Read 80 aligned sequences from ./alignments/HMBS_alignment_protidentity_ge_0.75.fasta, each consisting of 342 codons.
+
+2022-10-05 23:45:24,526 - INFO - The model will be an ExpCM informed by site-specific amino-acid preferences in ./prefs/HMBS_penalize-scores-gt1_new_prefs.csv
+2022-10-05 23:45:24,527 - INFO - Preferences will be averaged across sites.
+2022-10-05 23:45:26,215 - INFO - Successfully read site-specific amino-acid preferences for all 342 sites.
+
+2022-10-05 23:45:26,231 - INFO - Nucleotide frequency parameters phi will be set so stationary state matches alignment nucleotide frequencies of A = 0.245, C = 0.250, G = 0.294, T = 0.211
+
+2022-10-05 23:45:33,789 - INFO - Reading tree from ./phydms_results//HMBS/HMBS_identity-ge-0.75_RAxML_tree.newick
+2022-10-05 23:45:33,802 - INFO - Tree has 80 tips.
+2022-10-05 23:45:33,879 - INFO - Adjusted 1 branch lengths up to minbrlen 1e-06
+
+2022-10-05 23:45:33,883 - INFO - Initializing TreeLikelihood..
+2022-10-05 23:45:34,152 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-05 23:46:11,187 - INFO - TreeLikelihood initialized.
+2022-10-05 23:46:11,193 - INFO - Maximizing log likelihood (initially -20333.71).
+2022-10-05 23:46:11,193 - INFO - Branch lengths will be optimized individually.
+2022-10-06 00:29:02,515 - INFO - Maximization complete:
+	Step 1: optimized parameters, loglik went from -20333.71 to -18195.16 (19 iterations, 29 function evals)
+	Step 2: optimized branches, loglik went from -18195.16 to -18192.45 (47 iterations, 52 function evals)
+	Step 3: optimized parameters, loglik went from -18192.45 to -18192.43 (3 iterations, 7 function evals)
+	Step 4: optimized branches, loglik went from -18192.43 to -18192.43 (1 iterations, 5 function evals)
+2022-10-06 00:29:02,541 - INFO - Optimized log likelihood is -18192.43.
+2022-10-06 00:29:02,542 - INFO - Writing log likelihood to ./phydms_results//HMBS/HMBS_identity-ge-0.75_averaged_ExpCM_HMBS_penalize-scores-gt1_new_prefs_loglikelihood.txt
+2022-10-06 00:29:02,542 - INFO - Model parameters after optimization:
+	beta = 0.112618
+	kappa = 3.07115
+	omega = 0.129379
+	phiA = 0.25576
+	phiC = 0.239303
+	phiG = 0.289044
+2022-10-06 00:29:02,543 - INFO - Writing model parameters to ./phydms_results//HMBS/HMBS_identity-ge-0.75_averaged_ExpCM_HMBS_penalize-scores-gt1_new_prefs_modelparams.txt
+2022-10-06 00:29:02,543 - INFO - Writing the optimized tree to ./phydms_results//HMBS/HMBS_identity-ge-0.75_averaged_ExpCM_HMBS_penalize-scores-gt1_new_prefs_tree.newick
+
+2022-10-06 00:29:02,570 - INFO - Successful completion of phydms

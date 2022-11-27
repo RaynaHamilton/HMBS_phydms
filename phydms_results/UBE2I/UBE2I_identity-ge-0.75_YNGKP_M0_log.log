@@ -1,0 +1,89 @@
+2022-10-06 01:00:56,596 - INFO - Beginning execution of phydms in directory /home/jupyter/dms/hmbs_phydms_final
+
+2022-10-06 01:00:56,596 - INFO - Progress is being logged to ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_log.log
+
+2022-10-06 01:00:56,596 - INFO - Version information:
+	Time and date: Thu Oct  6 01:00:55 2022
+	Platform: Linux-4.19.0-22-cloud-amd64-x86_64-with-debian-10.13
+	Python version: 3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:53)  [GCC 9.4.0]
+	phydms version: 2.4.1
+	Bio version: 1.79
+	cython version: 0.29.32
+	numpy version: 1.21.6
+	scipy version: 1.7.3
+	matplotlib version: 3.5.3
+	natsort version: 8.2.0
+	sympy version: 1.10.1
+	six version: 1.16.0
+	pandas version: 1.3.5
+	pyvolve version: 1.1.0
+	statsmodels version: 0.13.2
+	weblogolib version: 3.5.0
+	PyPDF2 version: 2.11.0
+
+2022-10-06 01:00:56,596 - INFO - Parsed the following arguments:
+	alignment = ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta
+	tree = ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick
+	model = YNGKP_M0
+	outprefix = ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0
+	brlen = optimize
+	gammaomega = False
+	gammabeta = False
+	omegabysite = False
+	omegabysite_fixsyn = False
+	diffprefsbysite = False
+	diffprefsprior = ('invquadratic', 150.0, 0.5)
+	fitphi = False
+	randprefs = False
+	avgprefs = False
+	divpressure = None
+	ncpus = 1
+	fitprefsmethod = 2
+	ncats = 4
+	minbrlen = 1e-06
+	minpref = 0.002
+	seed = 1
+	initparams = None
+	profile = False
+	opt_details = False
+	nograd = False
+
+2022-10-06 01:00:56,596 - INFO - Random number seed: 1
+
+2022-10-06 01:00:56,596 - INFO - Reading alignment from ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta
+2022-10-06 01:00:56,749 - INFO - Read 56 aligned sequences from ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta, each consisting of 157 codons.
+
+2022-10-06 01:00:56,750 - INFO - Codon substitution model with be M0 version (Yang, Nielsen, Goldman, & Pederson. Genetics. 155:431-449).
+2022-10-06 01:00:56,766 - INFO - Reading tree from ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_RAxML_tree.newick
+2022-10-06 01:00:56,768 - INFO - Tree has 56 tips.
+2022-10-06 01:00:56,780 - INFO - Adjusted 1 branch lengths up to minbrlen 1e-06
+
+2022-10-06 01:00:56,780 - INFO - Initializing TreeLikelihood..
+2022-10-06 01:00:56,803 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 01:00:57,762 - INFO - TreeLikelihood initialized.
+2022-10-06 01:00:57,763 - INFO - Maximizing log likelihood (initially -10473.99).
+2022-10-06 01:00:57,763 - INFO - Branch lengths will be optimized individually.
+2022-10-06 01:05:09,624 - INFO - Maximization complete:
+	Step 1: optimized parameters, loglik went from -10473.99 to -9297.71 (20 iterations, 27 function evals)
+	Step 2: optimized branches, loglik went from -9297.71 to -9291.98 (38 iterations, 44 function evals)
+	Step 3: optimized parameters, loglik went from -9291.98 to -9291.97 (2 iterations, 5 function evals)
+2022-10-06 01:05:09,625 - INFO - Optimized log likelihood is -9291.97.
+2022-10-06 01:05:09,625 - INFO - Writing log likelihood to ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_loglikelihood.txt
+2022-10-06 01:05:09,625 - INFO - Model parameters after optimization:
+	kappa = 1.71037
+	omega = 0.0940671
+	phi0A = 0.265929
+	phi0C = 0.227333
+	phi0G = 0.262136
+	phi1A = 0.360733
+	phi1C = 0.237484
+	phi1G = 0.16798
+	phi2A = 0.298382
+	phi2C = 0.243508
+	phi2G = 0.277962
+2022-10-06 01:05:09,626 - INFO - Writing model parameters to ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_modelparams.txt
+2022-10-06 01:05:09,626 - INFO - Writing the optimized tree to ./phydms_results//UBE2I/UBE2I_identity-ge-0.75_YNGKP_M0_tree.newick
+
+2022-10-06 01:05:09,628 - INFO - Successful completion of phydms

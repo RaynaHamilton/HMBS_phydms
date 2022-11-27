@@ -1,0 +1,92 @@
+2022-10-06 14:32:44,778 - INFO - Beginning execution of phydms in directory /home/jupyter/dms/hmbs_phydms_final
+
+2022-10-06 14:32:44,778 - INFO - Progress is being logged to phydms_differential_results/SUMO1/SUMO1_identity-ge-0.85_YNGKP_M5_log.log
+
+2022-10-06 14:32:44,778 - INFO - Version information:
+	Time and date: Thu Oct  6 14:32:44 2022
+	Platform: Linux-4.19.0-22-cloud-amd64-x86_64-with-debian-10.13
+	Python version: 3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:53)  [GCC 9.4.0]
+	phydms version: 2.4.1
+	Bio version: 1.79
+	cython version: 0.29.32
+	numpy version: 1.21.6
+	scipy version: 1.7.3
+	matplotlib version: 3.5.3
+	natsort version: 8.2.0
+	sympy version: 1.10.1
+	six version: 1.16.0
+	pandas version: 1.3.5
+	pyvolve version: 1.1.0
+	statsmodels version: 0.13.2
+	weblogolib version: 3.5.0
+	PyPDF2 version: 2.11.0
+
+2022-10-06 14:32:44,778 - INFO - Parsed the following arguments:
+	alignment = ./alignments/SUMO1_alignment_protidentity_ge_0.85.fasta
+	tree = phydms_differential_results/SUMO1/SUMO1_identity-ge-0.85_RAxML_tree.newick
+	model = YNGKP_M5
+	outprefix = phydms_differential_results/SUMO1/SUMO1_identity-ge-0.85_YNGKP_M5
+	brlen = optimize
+	gammaomega = False
+	gammabeta = False
+	omegabysite = False
+	omegabysite_fixsyn = False
+	diffprefsbysite = False
+	diffprefsprior = ('invquadratic', 150.0, 0.5)
+	fitphi = False
+	randprefs = False
+	avgprefs = False
+	divpressure = None
+	ncpus = 1
+	fitprefsmethod = 2
+	ncats = 4
+	minbrlen = 1e-06
+	minpref = 0.002
+	seed = 1
+	initparams = None
+	profile = False
+	opt_details = False
+	nograd = False
+
+2022-10-06 14:32:44,778 - INFO - Random number seed: 1
+
+2022-10-06 14:32:44,778 - INFO - Reading alignment from ./alignments/SUMO1_alignment_protidentity_ge_0.85.fasta
+2022-10-06 14:32:44,844 - INFO - Read 38 aligned sequences from ./alignments/SUMO1_alignment_protidentity_ge_0.85.fasta, each consisting of 96 codons.
+
+2022-10-06 14:32:44,844 - INFO - Codon substitution model with be M5 version (Yang, Nielsen, Goldman, & Pederson. Genetics. 155:431-449).
+2022-10-06 14:32:44,860 - INFO - For this YNGKP_M5 model, omega will be drawn from 4 gamma-distributed categories.
+2022-10-06 14:32:44,873 - INFO - Reading tree from phydms_differential_results/SUMO1/SUMO1_identity-ge-0.85_RAxML_tree.newick
+2022-10-06 14:32:44,876 - INFO - Tree has 38 tips.
+2022-10-06 14:32:44,888 - INFO - Adjusted 1 branch lengths up to minbrlen 1e-06
+
+2022-10-06 14:32:44,889 - INFO - Initializing TreeLikelihood..
+2022-10-06 14:32:44,905 - WARNING - /home/jupyter/.local/lib/python3.7/site-packages/phydmslib/treelikelihood.py:303: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.gaps = numpy.array(self.gaps)
+
+2022-10-06 14:32:46,697 - INFO - TreeLikelihood initialized.
+2022-10-06 14:32:46,698 - INFO - Maximizing log likelihood (initially -3764.75).
+2022-10-06 14:32:46,698 - INFO - Branch lengths will be optimized individually.
+2022-10-06 14:34:53,669 - INFO - Maximization complete:
+	Step 1: optimized parameters, loglik went from -3764.75 to -3247.38 (16 iterations, 21 function evals)
+	Step 2: optimized branches, loglik went from -3247.38 to -3243.08 (34 iterations, 38 function evals)
+	Step 3: optimized parameters, loglik went from -3243.08 to -3243.07 (4 iterations, 7 function evals)
+	Step 4: optimized branches, loglik went from -3243.07 to -3243.07 (3 iterations, 7 function evals)
+2022-10-06 14:34:53,670 - INFO - Optimized log likelihood is -3243.07.
+2022-10-06 14:34:53,670 - INFO - Writing log likelihood to phydms_differential_results/SUMO1/SUMO1_identity-ge-0.85_YNGKP_M5_loglikelihood.txt
+2022-10-06 14:34:53,670 - INFO - Model parameters after optimization:
+	alpha_omega = 0.300001
+	beta_omega = 3.19463
+	kappa = 1.31367
+	phi0A = 0.317915
+	phi0C = 0.182147
+	phi0G = 0.327761
+	phi1A = 0.483986
+	phi1C = 0.139395
+	phi1G = 0.153016
+	phi2A = 0.300621
+	phi2C = 0.190179
+	phi2G = 0.305548
+2022-10-06 14:34:53,670 - INFO - Writing model parameters to phydms_differential_results/SUMO1/SUMO1_identity-ge-0.85_YNGKP_M5_modelparams.txt
+2022-10-06 14:34:53,670 - INFO - Writing the optimized tree to phydms_differential_results/SUMO1/SUMO1_identity-ge-0.85_YNGKP_M5_tree.newick
+
+2022-10-06 14:34:53,672 - INFO - Successful completion of phydms
