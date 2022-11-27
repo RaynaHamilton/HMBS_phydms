@@ -1,1 +1,3 @@
-# HMBS_phydms
+## Connecting Deep Mutational Scanning data to natural evolution
+
+This repository contains an analysis of deep mutational scanning (DMS) data for the heme biosynthesis gene HMBS provided by the [Fritz Roth Lab](http://llama.mshri.on.ca/) at University of Toronto.  [DMS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5740498/) is a method of inferring the selective pressures on different mutations and involves introducing a library of mutated human orthologues into yeast, then measuring the abundance of transfected plasmids at a later timepoint.  We can infer how closely this selection data matches natural evolution in multicellular organisms using the package [phydms](http://jbloomlab.github.io/phydms/), which constructs phylogenies using selection models informed by DMS data.  The full analysis is available in the file hmbs_phydms_2022.ipynb.
